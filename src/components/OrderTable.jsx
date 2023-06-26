@@ -94,7 +94,7 @@ const OrderTable = ({ filteredData }) => {
           </div>
         </div>
 
-        {/* ... */}
+       {/* <Pagination data={filteredData}></Pagination> */}
       </section>
     </>
   );
@@ -116,6 +116,7 @@ export default OrderTable;
 // import React from "react";
 // import Theader from './Theader';
 // import FilterBar from './FilterBar';
+import Pagination from './Pagination';
 
 // const OrderTable = ({ filteredData }) => {
 //   console.log(filteredData)
