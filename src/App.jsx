@@ -16,38 +16,17 @@ function App() {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
-        // Handle error
         console.error('Error fetching data:', error);
       }
     };
     fetchData();
   }, []);
-
-//   return (
-//     <div>
-//       {data ? (
-//         // Render your data
-//         <ul>
-//           {data.map(item => (
-//             <li key={item.id}>{item.name}</li>
-//           ))}
-//         </ul>
-//       ) : (
-//         // Render a loading state
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// };
-
-
   
-
   return (
     <>
      <Navbar></Navbar> 
-     <FilterBar></FilterBar> 
-     <OrderTable data={data}></OrderTable>
+     <FilterBar data={data}></FilterBar> 
+     
     </>
   )
 }

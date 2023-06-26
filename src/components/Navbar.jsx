@@ -36,7 +36,7 @@ const Navbar = () => {
             </svg>
             <input
               type="text"
-              placeholder="Filter books..."
+              placeholder="Filter orders..."
               className="search"
               id="lws-search"
             />
